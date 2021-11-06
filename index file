@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+</head>
+<body>
+   <h1 id="result">0</h1> 
+   <button id="plusButton" onclick="">+</button>
+   <button id="minsButton">-</button>
+</body>
+<script>
+    // get the + button element 
+    let myCounter=0;
+    const minsButton=document.getElementById("minsButton")
+    const plusButton=document.getElementById('plusButton');
+    plusButton.addEventListener("click", function (){
+        // console.log(" Start ");
+    //     console.log(" 1 plusButton.addEventListener");
+    //     console.log(" 2 plusButton.addEventListener");
+    //     console.log(" 3 plusButton.addEventListener");
+    //     console.log(" 4 plusButton.addEventListener");
+    //     console.log(" 5 plusButton.addEventListener");
+    //     console.log(" 6 plusButton.addEventListener");
+    //     console.log(" 7 plusButton.addEventListener");
+    //     console.log(" End ");
+
+    console.log(" Start ");
+        console.log(" 1 plusButton.addEventListener");
+        console.log(" 2 plusButton.addEventListener");
+        console.log(" 3 plusButton.addEventListener");
+        myCounter= myCounter +1;
+        result.innerText= myCounter;
+    }); 
+    minsButton.addEventListener("click", function (){
+        myCounter=myCounter - 1;
+        result.innerText=myCounter;
+    });
+    // we are not giving the above function a name because 
+    // whenever will click on + button the fun will automatically will be called
+    // so it is a anonimous function
+
+    // the functions that have no name are called anonimous functions
+
+    // function  testFun(){
+    //     console.log(" Start ");
+    //     console.log(" 1 plusButton.addEventListener");
+    //     console.log(" 2 plusButton.addEventListener");
+    //     console.log(" 3 plusButton.addEventListener");
+    //     console.log(" 4 plusButton.addEventListener");
+    //     console.log(" 5 plusButton.addEventListener");
+    //     console.log(" 6 plusButton.addEventListener");
+    //     console.log(" 7 plusButton.addEventListener");
+    //     console.log(" End ");
+    // }
+    // function is block of code that you can execute anytime you want
+    // testFun()
+    // testFun()
+    // testFun()
+    // testFun()
+    // testFun()
+    // get h1 element value 
+
+    const result=document.getElementById('result');
+
+    // result.innerText="Zain";
+    // plusButton.innerText="plus";
+
+    // increase the value of content in h1
+
+</script>
+</html>
